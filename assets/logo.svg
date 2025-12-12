@@ -1,0 +1,21 @@
+<svg width="200" height="50" viewBox="0 0 180 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Logo final ProjectPicker avec texte -->
+
+  <g id="pp-icon">
+    <!-- Cercle de fond violet clair -->
+    <circle cx="20" cy="20" r="18" fill="#6C5CE7" opacity="0.1"/>
+
+    <!-- Premier P -->
+    <path d="M15 12H22C24.7614 12 27 14.2386 27 17C27 19.7614 24.7614 22 22 22H18V32"
+          stroke="#6C5CE7" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+
+    <!-- Deuxième P -->
+    <path d="M32 12H39C41.7614 12 44 14.2386 44 17C44 19.7614 41.7614 22 39 22H35V32"
+          stroke="#6C5CE7" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  </g>
+
+  <!-- Texte ProjectPicker -->
+  <text x="55" y="28" font-family="Poppins, sans-serif" font-weight="700" font-size="18" fill="#2D3436">
+    Project<tspan fill="#6C5CE7">Picker</tspan>
+  </text>
+</svg>

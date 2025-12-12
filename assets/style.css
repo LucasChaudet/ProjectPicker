@@ -1,6 +1,9 @@
 @import "normalize.css";
 
 
+
+
+
 #page1 {
     height: 100vh;
     display :flex;
@@ -8,7 +11,7 @@
     align-items: center;
     flex-direction: column;
     gap: 10px;
-    color: white;
+    color: rgb(0, 0, 0);
 }
 
 
@@ -27,12 +30,7 @@ html{
 }
 
 body {
-    background-color: rgb(255, 256, 236);
-}
-
-
-h1{
-    color: rgb(255, 255, 255);
+    background-color: rgb(246, 246, 246);
 }
 
 
@@ -44,7 +42,10 @@ h1{
 
 
 
-.main-header {
+
+
+
+.main_head {
     position: fixed;
     top: 0;
     width: 100%;
@@ -53,13 +54,13 @@ h1{
     box-shadow: rgba(247, 228, 119, 0.15) 1.95px 1.95px 2.6px;
 }
 
-.main-header .container {
+.main_head .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.main-header nav > ul {
+.main_head nav > ul {
     display: flex;
     gap: 15px;
     margin: 0;
@@ -67,13 +68,14 @@ h1{
     list-style-type: none;
 }
 
-.main-header nav > ul a {
+.main_head nav > ul a {
     color: black;
     text-decoration: none;
 }
 
 footer{
     background-color: white;
+    padding: 20px 0;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -81,3 +83,75 @@ footer{
 
 
 
+h1,h2,h3,h4,h5,h6{
+    margin: 20px;
+}
+
+p{
+    margin: 0;
+    padding: 0;
+}
+
+.barre{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+        
+    width: 100%;
+    padding: 20px 0;
+}
+
+
+button{
+    height: 40px;
+}
+
+
+.btn{
+    display: inline-block;
+    padding:0.5rem;
+    border-radius: 10px;
+    border-color: rgb(3, 104, 255);
+    color: rgb(3, 104, 255);
+    cursor: grab;
+    font-size: 1rem;
+    text-decoration: none;
+
+}
+
+
+.btn.btn-blue{
+    background-color: blue;
+
+}
+
+
+
+.btn:hover{
+    background-color: rgb(250, 250, 243);
+}
+
+.btn.btn_orange{
+
+    background-color: orange;
+}
+
+svg{
+    width: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+
+.svgbtn{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+
+.espace{
+    display: flex;
+    gap: 10px;
+
+}
