@@ -4,14 +4,14 @@
 
 
 
-#page1 {
-    height: 100vh;
+#page {
     display :flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     gap: 10px;
     color: rgb(0, 0, 0);
+    margin: 100px;
 }
 
 
@@ -154,4 +154,18 @@ svg{
     display: flex;
     gap: 10px;
 
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    width: 300px;
+    height: 200;
+}
+
+.card_espace{
+    display: flex;
+    gap: 20px;
 }
