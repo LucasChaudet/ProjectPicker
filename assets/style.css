@@ -11,7 +11,8 @@
     flex-direction: column;
     gap: 10px;
     color: rgb(0, 0, 0);
-    margin: 100px;
+    margin-top: 130px;
+    margin-bottom: 100px;
 }
 
 
@@ -26,7 +27,7 @@
 
 
 html{
-    font-size: 20px;
+    font-size: 18px;
 }
 
 body {
@@ -83,14 +84,12 @@ footer{
 
 
 
-h1,h2,h3,h4,h5,h6{
-    margin: 20px;
+h1,h2,h3,h4,h5,h6,p{
+    margin: 0;
+    padding: 8px;
 }
 
-p{
-    margin: 0;
-    padding: 0;
-}
+
 
 .barre{
     display: flex;
@@ -122,6 +121,7 @@ button{
 
 .btn.btn-blue{
     background-color: blue;
+    color: white;
 
 }
 
@@ -134,6 +134,8 @@ button{
 .btn.btn_orange{
 
     background-color: orange;
+    border-color: orange;
+    color: white;
 }
 
 svg{
@@ -152,6 +154,7 @@ svg{
 
 .espace{
     display: flex;
+    justify-content: space-between;
     gap: 10px;
 
 }
@@ -161,11 +164,13 @@ svg{
     padding: 20px;
     border-radius: 15px;
     box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-    width: 300px;
+    width: 280px;
     height: 200;
+    
 }
 
 .card_espace{
     display: flex;
     gap: 20px;
 }
+
