@@ -132,6 +132,7 @@ button{
     background-color: #6C5CE7;
     color: white;
     border-radius: 10px;
+    fill: white;
 
 }
 
@@ -195,8 +196,27 @@ svg{
 .card.card_projet{
 
     width: 500px;
+    .padding{
+        padding: 8px;
+    }
+    h5 svg{
+        width: 10px;
+        fill: #6C5CE7;
+    }
+    
+    input{
+        width: 100%;
+        
 
+    }
+    textarea{
+        width: 100%;
+        height: 100px;
+        
+    }
 }
+
+
 
 .card_espace{
     display: grid;
@@ -209,3 +229,8 @@ svg{
     color: #2D3436;
 }
 
+.espace.padding{
+    display:flex;
+    justify-content: end;
+    gap: 10px;
+}
