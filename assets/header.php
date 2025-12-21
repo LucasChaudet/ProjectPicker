@@ -13,7 +13,7 @@
                 <ul>
                     <li><a href="index.php">Accueil</a> </li>
                     <li><a href="Proposer_projet.php"> Propser un projet</a></li>
-                    <li>Mes Projets</li>
+                    <li> <a href="Mes_projets.php">Mes Projets</a> </li>
                     <li>Connexion</li>
                 </ul>
             </nav>

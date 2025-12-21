@@ -1,19 +1,33 @@
 @import "normalize.css";
 
 
+:root {
+    /* Couleurs */
+    --color-primary: #6C5CE7;
+    --color-accent: #FD7E14;
+    --color-bg-light: #F8F9FA;
+    --color-text-dark: #2D3436;
 
+    /* Espacements */
+    --spacing-sm: 12px;
+    --spacing-md: 16px;
+    --spacing-lg: 20px;
+
+    /* Bordures */
+    --radius-md: 12px;
+    --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
 
 
 #page {
     display :flex;
-    justify-content: center;
     align-items: center;
     flex-direction: column;
     gap: 10px;
     color: rgb(0, 0, 0);
     margin-top: 130px;
     margin-bottom: 100px;
-    min-height: 100%;
+    min-height: 56%;
 }
 
 
@@ -56,7 +70,7 @@ body {
     width: 100%;
     padding: 16px 0;
     background-color: white;
-    box-shadow: rgba(247, 228, 119, 0.15) 1.95px 1.95px 2.6px;
+    box-shadow: var(--shadow-sm);
 }
 
 .main_head .container {
@@ -84,6 +98,7 @@ footer{
     display: flex;
     align-items: center;
     justify-content: center;
+    box-shadow: var(--shadow-sm);
 }
 
 
@@ -116,39 +131,40 @@ button{
     display: flex;
     padding:0.5rem;
     border-radius: 15px;
-    border-color: #6C5CE7;
-    color: #6C5CE7;
+    border-color: var(--color-primary);
+    color: var(--color-primary);
     cursor: grab;
     font-size: 1rem;
     text-decoration: none;
 
 }
 button{
-    border: 3px solid #6C5CE7;
+    border: none;
     box-shadow: none;
 }
 
 .btn.btn-blue{
-    background-color: #6C5CE7;
-    color: white;
+    background-color: var(--color-primary);
+    color: var(--color-bg-light);
     border-radius: 10px;
-    fill: white;
+    fill: var(--color-bg-light);
 
 }
 
 
 
-.btn:hover{
-    background-color: rgb(75, 75, 75);
-}
+
 
 .btn.btn_orange{
 
-    background-color: #FD7E14;
-    border-color: #FD7E14;
-    color: white;
+    background-color: var(--color-accent);
+    color: var(--color-bg-light);
     border-radius: 50px;
-    fill: white;
+    fill: var(--color-bg-light);
+}
+
+.btn:hover{
+    background-color: rgb(75, 75, 75);
 }
 
 svg{
@@ -162,7 +178,8 @@ svg{
     display: flex;
     align-content: center;
     justify-content: center;
-    fill: #6C5CE7;
+    fill: var(--color-primary);
+    border: 3px solid var(--color-primary);
 }
 
 
@@ -181,7 +198,7 @@ svg{
     background: white;
     padding: 20px;
     border-radius: 15px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    box-shadow: var(--shadow-sm);
     width: 310px;
     svg{
         width: 15px;
@@ -192,7 +209,7 @@ svg{
     
 }
 
-
+/** page Mes**/
 .card.card_projet{
 
     width: 500px;
@@ -233,4 +250,25 @@ svg{
     display:flex;
     justify-content: end;
     gap: 10px;
+}
+
+
+/**page mes_projet**/
+
+#page3.card{
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    width: 100%;
+    min-height: 30px;
+}
+
+td, th{
+    padding: 12px; 
+}
+
+td{
+    border-top: 1px solid black;
+
 }
