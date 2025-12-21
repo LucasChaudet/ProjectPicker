@@ -2,32 +2,11 @@
 <?php
 
 require_once "functions.php";
-$connection = new PDO('mysql:dbname=projectpicker;host=127.0.0.1', 'root', '');
+
+get_header("Proposer un projet")
 ?>
 
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="assets/style.css">
-</head>
-<body>
-    <header class="main_head">
-        <div class="container">
-            <img src="assets/logo.svg" >
-            <nav>
-                <ul>
-                    <li><a href="index.php">Accueil</a> </li>
-                    <li> <a href="Proposer_projet.php"> Propser un projet</a></li>
-                    <li>Mes Projets</li>
-                    <li>Connexion</li>
-                </ul>
-            </nav>
-        </div>
-        
-        
-    </header>
+
     
     <section id="page">
         <h1>Proposer un nouveau projet</h1>
@@ -83,9 +62,4 @@ $connection = new PDO('mysql:dbname=projectpicker;host=127.0.0.1', 'root', '');
     </section>
     
     
-    <footer>
-        <p>2025 ProjectPicker- IIA BTS SIO SLAM</p>
-    </footer>
-    
-</body>
-</html>
+<?php get_footer()?>
