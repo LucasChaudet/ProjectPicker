@@ -223,6 +223,7 @@ svg{
     
     input{
         width: 100%;
+        height: 35px;
         
 
     }
@@ -271,4 +272,11 @@ td, th{
 td{
     border-top: 1px solid black;
 
+}
+
+.espace.padding#page4 .btn.btn-blue{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

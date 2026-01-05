@@ -12,9 +12,9 @@
             <nav>
                 <ul>
                     <li><a href="index.php">Accueil</a> </li>
-                    <li><a href="Proposer_projet.php"> Propser un projet</a></li>
+                    <li><a href="Proposer_projet.php"> Proposer un projet</a></li>
                     <li> <a href="Mes_projets.php">Mes Projets</a> </li>
-                    <li>Connexion</li>
+                    <li> <a href="Connexion.php"> Connexion</a> </li>
                 </ul>
             </nav>
         </div>
