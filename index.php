@@ -68,7 +68,7 @@ $cards = $stmt->fetchAll();
                                 votes
                             </a>
 
-                            <a href="" class="btn btn-blue">
+                            <a href="project.php?id=<?php echo $card["id"] ?>"  class="btn btn-blue" >
                                  Voir détails
                             </a>
 

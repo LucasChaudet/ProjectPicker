@@ -232,6 +232,7 @@ svg{
         height: 100px;
         
     }
+
 }
 
 
@@ -280,3 +281,44 @@ td{
     justify-content: center;
     align-items: center;
 }
+
+
+
+/** pour la page projet**/
+
+
+#page_projet{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+
+    .btn.btn_orange{
+        height: 10px;
+    }
+}
+
+.card.card_projet2{
+    width: 700px;
+    svg{
+        width: 10px;
+    }
+
+
+}
+hr{
+    color: #636E72;
+}
+
+
+.centre_btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.centre_btn .btn.svgbtn#page_projet ,.centre_btn .btn.btn_orange#page_projet {
+    border-radius: 5px;
+
+}
+
