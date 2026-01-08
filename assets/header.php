@@ -8,7 +8,7 @@
 <body>
     <header class="main_head">
         <div class="container">
-            <img src="assets/logo.svg" >
+            <img src="assets/logo.svg" alt="logo_projetpicker" >
             <nav>
                 <ul>
                     <li><a href="index.php">Accueil</a> </li>
