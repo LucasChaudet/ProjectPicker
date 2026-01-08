@@ -47,7 +47,7 @@ get_header("Projet")
 
                 </div>
                 <hr>
-                <p class="txt_principale" id="trait"><?php echo $card["descr"]; ?></p>
+                <p class="txt_principale"><?php echo $card["descr"]; ?></p>
                 <p class="txt_principale"><?php echo $card["descr_short"]; ?></p>
                 <hr>
                 
