@@ -1,10 +1,5 @@
 <?php
 
-function asset(string $fileName): string {
-    return "uploads/" . $fileName;
-}
-
-
 function get_header(string $page_title): void{
     require_once "assets/header.php";
 }

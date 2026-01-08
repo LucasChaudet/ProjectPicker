@@ -6,14 +6,13 @@ require_once "functions.php";
 
 $connection = new PDO('mysql:dbname=projectpicker;host=127.0.0.1', 'root', '');
 
-$stmt = $connection->query("SELECT  project.*,user.*,project.*, user.id AS user_id, CONCAT(user.first_name, ' ', user.last_name) AS nom_prenom, COUNT(DISTINCT vote_positif.user_id) AS vote, COUNT(DISTINCT vote_negatif.user_id) AS downvote FROM user LEFT JOIN project ON project.user_id = user.id LEFT JOIN vote AS vote_positif ON vote_positif.project_id = project.id  AND vote_positif.value = 1 LEFT JOIN vote AS vote_negatif ON vote_negatif.project_id = project.id AND vote_negatif.value = -1 GROUP BY project.id, user.id, user.first_name, user.last_name;");
+$stmt = $connection->query("SELECT  project.*,user.*, user.id AS user_id, CONCAT(user.first_name, ' ', user.last_name) AS nom_prenom, COUNT(DISTINCT vote_positif.user_id) AS vote, COUNT(DISTINCT vote_negatif.user_id) AS downvote FROM user LEFT JOIN project ON project.user_id = user.id LEFT JOIN vote AS vote_positif ON vote_positif.project_id = project.id  AND vote_positif.value = 1 LEFT JOIN vote AS vote_negatif ON vote_negatif.project_id = project.id AND vote_negatif.value = -1 GROUP BY project.id, user.id, user.first_name, user.last_name;");
 $cards = $stmt->fetchAll();
 
 
-
+get_header("Acceuil")
 ?>
 
-<?php get_header("Acceuil")?>
 
 
     <section class="container">
